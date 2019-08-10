@@ -42,48 +42,107 @@ body {
   font-size: 1.5rem;
 }
 
+.clock .number span {
+  display: block;
+}
+
 .clock .number1 {
-  --rotation: 30deg ;
+  --rotation: 30deg;
+}
+
+.clock .number1 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number2 {
-  --rotation: 60deg ;
+  --rotation: 60deg;
+}
+
+.clock .number2 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number3 {
-  --rotation: 90deg ;
+  --rotation: 90deg;
+}
+
+.clock .number3 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number4 {
-  --rotation: 120deg ;
+  --rotation: 120deg;
+}
+
+.clock .number4 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number5 {
-  --rotation: 150deg ;
+  --rotation: 150deg;
+}
+
+.clock .number5 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number6 {
-  --rotation: 180deg ;
+  --rotation: 180deg;
+}
+
+.clock .number6 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number7 {
-  --rotation: 210deg ;
+  --rotation: 210deg;
+}
+
+.clock .number7 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number8 {
-  --rotation: 240deg ;
+  --rotation: 240deg;
+}
+
+.clock .number8 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number9 {
-  --rotation: 270deg ;
+  --rotation: 270deg;
+}
+
+.clock .number9 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number10 {
-  --rotation: 300deg ;
+  --rotation: 300deg;
+}
+
+.clock .number10 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number11 {
-  --rotation: 330deg ;
+  --rotation: 330deg;
+}
+
+.clock .number11 span {
+  -webkit-transform: rotate(calc(var(--rotation) * -1));
+          transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .hand {
