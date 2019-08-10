@@ -9,6 +9,17 @@
 body {
   background: -webkit-gradient(linear, left top, right top, from(#00aaff), to(#00ffea));
   background: linear-gradient(to right, #00aaff, #00ffea);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .clock {
@@ -28,6 +39,7 @@ body {
   text-align: center;
   -webkit-transform: rotate(var(--rotation));
           transform: rotate(var(--rotation));
+  font-size: 1.5rem;
 }
 
 .clock .number1 {
@@ -72,5 +84,52 @@ body {
 
 .clock .number11 {
   --rotation: 330deg ;
+}
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+          transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  z-index: 11;
+  background-color: black;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
+
+.clock .hand.minute {
+  width: 7px;
+  height: 40%;
+  background-color: black;
+}
+
+.clock .hand.hour {
+  width: 10px;
+  height: 35%;
+  background-color: black;
 }
 /*# sourceMappingURL=main.css.map */
